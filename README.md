@@ -15,6 +15,7 @@ Each folder contains two Jupyter notebooks:
 ## Environment Setup
 
 The code requires:
+
 - Python ≥ 3.10
 - JupyterLab or Jupyter Notebook
 - NumPy, SciPy, Matplotlib, Pandas

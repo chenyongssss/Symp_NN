@@ -12,10 +12,9 @@ This example covers data generation and training/evaluation for the 1D linear wa
 ## Run order
 1. Run `linear_data_generation.ipynb` first and verify files appear under `data/`.
 2. Run `symp_linear_wave.ipynb` to train and evaluate.
-
+```
 
 
 ## Notes
 - Start with a smaller grid or shorter time horizon to smoke-test the pipeline, then scale up.
 - If training time is long, reduce `epochs`, `batch_size`, or model width/depth.
-````
