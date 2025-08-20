@@ -1,59 +1,60 @@
 ```markdown
 # Symplectic ROM — Numerical Experiments
 
-This repository hosts three numerical experiment suites:
-- `linear/` — 1D linear wave
-- `param/`  — parametric linear wave
-- `schro/`  — 1D nonlinear Schrödinger (NLS)
+This repository contains code for three numerical experiment suites:
+- `linear/` — 1D linear wave equation
+- `param/` — Parametric linear wave equation
+- `schro/` — 1D nonlinear Schrödinger (NLS) equation
 
 Each folder contains two Jupyter notebooks:
-1) **Data generation** (run first)
-2) **Model building / training / testing** (run second)
+1. **`*_data_generation.ipynb`**: Run this first to generate the simulation data.
+2. **`symp_*.ipynb`**: Run this second to build, train, and test the symplectic reduced-order model.
 
-## Repository layout
+## Repository Layout
+
 ```
-
 .
 ├── linear/
+│   ├── linear_data_generation.ipynb
+│   └── symp_linear_wave.ipynb
 ├── param/
+│   ├── param_data_generation.ipynb
+│   └── symp_param_wave.ipynb
 └── schro/
+    ├── schro_data_generation.ipynb
+    └── symp_schro.ipynb
+```
 
-````
+## Environment Setup
 
-## Environment
+The code requires:
 - Python ≥ 3.10
-- JupyterLab/Notebook
+- JupyterLab or Jupyter Notebook
 - NumPy, SciPy, Matplotlib, Pandas
-- TensorFlow ≥ 2.12 (or the version used in your paper)
+- TensorFlow ≥ 2.12
 
-Quick setup (example):
+A quick setup using `conda` is recommended:
 ```bash
 conda create -n symprom python=3.11 -y
 conda activate symprom
 pip install numpy scipy matplotlib pandas jupyterlab tensorflow
-````
+```
 
-## How to run (same for all examples)
+## How to Run
 
-Using `linear/` as an example:
+The procedure is the same for all examples. Using the `linear/` experiment as an example:
 
-1. Open `linear/linear_data_generation.ipynb` and **Run All**.
-   This writes `data/features.npy` (and 'labels.npy', optional 'test.npy').
-2. Open `linear/symp_linear_wave.ipynb` and **Run All**.
-   
+1.  **Generate Data**: Open and run all cells in `linear/linear_data_generation.ipynb`.
+    *This will generate `data/features.npy` (and typically `labels.npy`; a `test.npy` may also be created).*
+2.  **Train and Test Model**: Open and run all cells in `linear/symp_linear_wave.ipynb`.
 
-> The `param/` and `schro/` folders follow the same procedure.
+> The `param/` and `schro/` folders follow the identical procedure.
 
 ## Reproducibility
 
-Each notebook sets random seeds at the top. Keep defaults or change them explicitly.
+Each notebook sets random seeds at the beginning for reproducibility. Please keep the default seed values or change them explicitly if needed.
 
-## Data size
+## Data Size
 
-If full datasets are large, commit a small sample for quick reproduction and provide a generator/downloader inside the data notebook. If you use Git LFS, configure `.gitattributes` accordingly.
+The full datasets used in the paper may be large. This repository includes smaller sample datasets to allow for quick verification and reproduction of the code. Instructions for generating full datasets or links to download them are provided in the respective data generation notebooks.
 
-## Issues
-
-Please include your OS, Python/TensorFlow versions, and a screenshot of any error when filing an issue.
-
-````
