@@ -1,4 +1,4 @@
-```markdown
+
 # Example: Parametric Linear Wave
 
 This example handles **parametric** linear waves (e.g., varying speed/coefficients).
@@ -12,7 +12,7 @@ This example handles **parametric** linear waves (e.g., varying speed/coefficien
 ## Run order
 1. Run `param_data_generation.ipynb`.
 2. Run `symp_param.ipynb`.
-```
+
 
 
 ## Notes

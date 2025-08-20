@@ -1,4 +1,4 @@
-```markdown
+
 # Example: 1D Nonlinear Schrödinger (NLS)
 
 This example demonstrates data generation and training/evaluation for the 1D NLS problem.
@@ -12,7 +12,7 @@ This example demonstrates data generation and training/evaluation for the 1D NLS
 ## Run order
 1. Run `schro_data_generation.ipynb`.
 2. Run `symp_schrodinger.ipynb`.
-```
+
 
 
 ## Notes

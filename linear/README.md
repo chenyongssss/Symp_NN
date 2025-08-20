@@ -1,4 +1,4 @@
-```markdown
+
 # Example: Linear Wave
 
 This example covers data generation and training/evaluation for the 1D linear wave problem.
