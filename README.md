@@ -10,20 +10,7 @@ Each folder contains two Jupyter notebooks:
 1. **`*_data_generation.ipynb`**: Run this first to generate the simulation data.
 2. **`symp_*.ipynb`**: Run this second to build, train, and test the symplectic reduced-order model.
 
-## Repository Layout
 
-```
-.
-├── linear/
-│   ├── linear_data_generation.ipynb
-│   └── symp_linear_wave.ipynb
-├── param/
-│   ├── param_data_generation.ipynb
-│   └── symp_param_wave.ipynb
-└── schro/
-    ├── schro_data_generation.ipynb
-    └── symp_schro.ipynb
-```
 
 ## Environment Setup
 
