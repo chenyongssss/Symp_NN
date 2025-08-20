@@ -1,4 +1,4 @@
-```markdown
+
 # Symplectic ROM — Numerical Experiments
 
 This repository contains code for three numerical experiment suites:
