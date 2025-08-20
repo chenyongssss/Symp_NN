@@ -12,7 +12,7 @@ This example covers data generation and training/evaluation for the 1D linear wa
 ## Run order
 1. Run `linear_data_generation.ipynb` first and verify files appear under `data/`.
 2. Run `symp_linear_wave.ipynb` to train and evaluate.
-```
+
 
 
 ## Notes
