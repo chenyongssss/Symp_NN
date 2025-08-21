@@ -39,7 +39,7 @@ pip install numpy scipy matplotlib pandas jupyterlab tensorflow
 The procedure is the same for all examples. Using the `linear/` experiment as an example:
 
 1.  **Generate Data**: Open and run all cells in `linear/linear_data_generation.ipynb`.
-    *This will generate `data/features.npy` (and typically `labels.npy`; a `test.npy` may also be created).*
+    *This will generate `data/features.npy` (and `labels.npy`; a `test.npy` may be optionally created).*
 2.  **Train and Test Model**: Open and run all cells in `linear/symp_linear_wave.ipynb`.
 
 > The `param/` and `schro/` folders follow the identical procedure.
